@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/counting inversions/dandq_inversion.hpp
+iostream
+-
+vector
+-
+
+C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/counting inversions/naive_inversion.hpp
+iostream
+-
+vector
+-
+
+C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/counting inversions/stress.cpp
+iostream
+-
+vector
+-
+chrono
+-
+thread
+-
+algorithm
+-
+naive_inversion.hpp
+C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/counting inversions/naive_inversion.hpp
+dandq_inversion.hpp
+C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/counting inversions/dandq_inversion.hpp
+
