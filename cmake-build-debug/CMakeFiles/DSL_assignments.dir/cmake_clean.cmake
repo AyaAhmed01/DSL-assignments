@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DSL_assignments.dir/counting_inversions/dandq_inversion.cpp.obj"
+  "CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_without_repetition.cpp.obj"
   "DSL_assignments.exe"
   "DSL_assignments.exe.manifest"
   "DSL_assignments.pdb"

@@ -142,32 +142,32 @@ DSL_assignments/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/build
 .PHONY : DSL_assignments/fast
 
-counting_inversions/dandq_inversion.obj: counting_inversions/dandq_inversion.cpp.obj
+dynamic_programming/knapsack_without_repetition.obj: dynamic_programming/knapsack_without_repetition.cpp.obj
 
-.PHONY : counting_inversions/dandq_inversion.obj
+.PHONY : dynamic_programming/knapsack_without_repetition.obj
 
 # target to build an object file
-counting_inversions/dandq_inversion.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/counting_inversions/dandq_inversion.cpp.obj
-.PHONY : counting_inversions/dandq_inversion.cpp.obj
+dynamic_programming/knapsack_without_repetition.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_without_repetition.cpp.obj
+.PHONY : dynamic_programming/knapsack_without_repetition.cpp.obj
 
-counting_inversions/dandq_inversion.i: counting_inversions/dandq_inversion.cpp.i
+dynamic_programming/knapsack_without_repetition.i: dynamic_programming/knapsack_without_repetition.cpp.i
 
-.PHONY : counting_inversions/dandq_inversion.i
+.PHONY : dynamic_programming/knapsack_without_repetition.i
 
 # target to preprocess a source file
-counting_inversions/dandq_inversion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/counting_inversions/dandq_inversion.cpp.i
-.PHONY : counting_inversions/dandq_inversion.cpp.i
+dynamic_programming/knapsack_without_repetition.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_without_repetition.cpp.i
+.PHONY : dynamic_programming/knapsack_without_repetition.cpp.i
 
-counting_inversions/dandq_inversion.s: counting_inversions/dandq_inversion.cpp.s
+dynamic_programming/knapsack_without_repetition.s: dynamic_programming/knapsack_without_repetition.cpp.s
 
-.PHONY : counting_inversions/dandq_inversion.s
+.PHONY : dynamic_programming/knapsack_without_repetition.s
 
 # target to generate assembly for a file
-counting_inversions/dandq_inversion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/counting_inversions/dandq_inversion.cpp.s
-.PHONY : counting_inversions/dandq_inversion.cpp.s
+dynamic_programming/knapsack_without_repetition.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_without_repetition.cpp.s
+.PHONY : dynamic_programming/knapsack_without_repetition.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DSL_assignments
-	@echo ... counting_inversions/dandq_inversion.obj
-	@echo ... counting_inversions/dandq_inversion.i
-	@echo ... counting_inversions/dandq_inversion.s
+	@echo ... dynamic_programming/knapsack_without_repetition.obj
+	@echo ... dynamic_programming/knapsack_without_repetition.i
+	@echo ... dynamic_programming/knapsack_without_repetition.s
 .PHONY : help
 
 
