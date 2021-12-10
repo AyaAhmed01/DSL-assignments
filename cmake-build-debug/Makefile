@@ -142,32 +142,32 @@ DSL_assignments/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/build
 .PHONY : DSL_assignments/fast
 
-dynamic_programming/knapsack_without_repetition.obj: dynamic_programming/knapsack_without_repetition.cpp.obj
+dynamic_programming/knapsack_with_repetition.obj: dynamic_programming/knapsack_with_repetition.cpp.obj
 
-.PHONY : dynamic_programming/knapsack_without_repetition.obj
+.PHONY : dynamic_programming/knapsack_with_repetition.obj
 
 # target to build an object file
-dynamic_programming/knapsack_without_repetition.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_without_repetition.cpp.obj
-.PHONY : dynamic_programming/knapsack_without_repetition.cpp.obj
+dynamic_programming/knapsack_with_repetition.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_with_repetition.cpp.obj
+.PHONY : dynamic_programming/knapsack_with_repetition.cpp.obj
 
-dynamic_programming/knapsack_without_repetition.i: dynamic_programming/knapsack_without_repetition.cpp.i
+dynamic_programming/knapsack_with_repetition.i: dynamic_programming/knapsack_with_repetition.cpp.i
 
-.PHONY : dynamic_programming/knapsack_without_repetition.i
+.PHONY : dynamic_programming/knapsack_with_repetition.i
 
 # target to preprocess a source file
-dynamic_programming/knapsack_without_repetition.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_without_repetition.cpp.i
-.PHONY : dynamic_programming/knapsack_without_repetition.cpp.i
+dynamic_programming/knapsack_with_repetition.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_with_repetition.cpp.i
+.PHONY : dynamic_programming/knapsack_with_repetition.cpp.i
 
-dynamic_programming/knapsack_without_repetition.s: dynamic_programming/knapsack_without_repetition.cpp.s
+dynamic_programming/knapsack_with_repetition.s: dynamic_programming/knapsack_with_repetition.cpp.s
 
-.PHONY : dynamic_programming/knapsack_without_repetition.s
+.PHONY : dynamic_programming/knapsack_with_repetition.s
 
 # target to generate assembly for a file
-dynamic_programming/knapsack_without_repetition.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_without_repetition.cpp.s
-.PHONY : dynamic_programming/knapsack_without_repetition.cpp.s
+dynamic_programming/knapsack_with_repetition.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_with_repetition.cpp.s
+.PHONY : dynamic_programming/knapsack_with_repetition.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DSL_assignments
-	@echo ... dynamic_programming/knapsack_without_repetition.obj
-	@echo ... dynamic_programming/knapsack_without_repetition.i
-	@echo ... dynamic_programming/knapsack_without_repetition.s
+	@echo ... dynamic_programming/knapsack_with_repetition.obj
+	@echo ... dynamic_programming/knapsack_with_repetition.i
+	@echo ... dynamic_programming/knapsack_with_repetition.s
 .PHONY : help
 
 
