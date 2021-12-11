@@ -142,32 +142,32 @@ DSL_assignments/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/build
 .PHONY : DSL_assignments/fast
 
-dynamic_programming/knapsack_with_repetition.obj: dynamic_programming/knapsack_with_repetition.cpp.obj
+dynamic_programming/longest_increasing_subsequence.obj: dynamic_programming/longest_increasing_subsequence.cpp.obj
 
-.PHONY : dynamic_programming/knapsack_with_repetition.obj
+.PHONY : dynamic_programming/longest_increasing_subsequence.obj
 
 # target to build an object file
-dynamic_programming/knapsack_with_repetition.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_with_repetition.cpp.obj
-.PHONY : dynamic_programming/knapsack_with_repetition.cpp.obj
+dynamic_programming/longest_increasing_subsequence.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subsequence.cpp.obj
+.PHONY : dynamic_programming/longest_increasing_subsequence.cpp.obj
 
-dynamic_programming/knapsack_with_repetition.i: dynamic_programming/knapsack_with_repetition.cpp.i
+dynamic_programming/longest_increasing_subsequence.i: dynamic_programming/longest_increasing_subsequence.cpp.i
 
-.PHONY : dynamic_programming/knapsack_with_repetition.i
+.PHONY : dynamic_programming/longest_increasing_subsequence.i
 
 # target to preprocess a source file
-dynamic_programming/knapsack_with_repetition.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_with_repetition.cpp.i
-.PHONY : dynamic_programming/knapsack_with_repetition.cpp.i
+dynamic_programming/longest_increasing_subsequence.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subsequence.cpp.i
+.PHONY : dynamic_programming/longest_increasing_subsequence.cpp.i
 
-dynamic_programming/knapsack_with_repetition.s: dynamic_programming/knapsack_with_repetition.cpp.s
+dynamic_programming/longest_increasing_subsequence.s: dynamic_programming/longest_increasing_subsequence.cpp.s
 
-.PHONY : dynamic_programming/knapsack_with_repetition.s
+.PHONY : dynamic_programming/longest_increasing_subsequence.s
 
 # target to generate assembly for a file
-dynamic_programming/knapsack_with_repetition.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/knapsack_with_repetition.cpp.s
-.PHONY : dynamic_programming/knapsack_with_repetition.cpp.s
+dynamic_programming/longest_increasing_subsequence.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subsequence.cpp.s
+.PHONY : dynamic_programming/longest_increasing_subsequence.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DSL_assignments
-	@echo ... dynamic_programming/knapsack_with_repetition.obj
-	@echo ... dynamic_programming/knapsack_with_repetition.i
-	@echo ... dynamic_programming/knapsack_with_repetition.s
+	@echo ... dynamic_programming/longest_increasing_subsequence.obj
+	@echo ... dynamic_programming/longest_increasing_subsequence.i
+	@echo ... dynamic_programming/longest_increasing_subsequence.s
 .PHONY : help
 
 
