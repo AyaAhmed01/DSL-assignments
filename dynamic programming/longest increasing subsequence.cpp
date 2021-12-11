@@ -4,6 +4,10 @@
 using namespace std;
 
 // Dynamic programming sol: recursive, iterative. Time: O(n^2), space: O(n)
+// greedy && binary search: O(n*logn)
+// sliding window
+// getting path solution
+// BIT solution
 
 vector<int> dp(3000, -1);
 
