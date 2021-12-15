@@ -1,12 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <stack>
 
 using namespace std;
 
 // Dynamic programming sol: recursive, iterative. Time: O(n^2), space: O(n)
+// getting path
 // greedy && binary search: O(n*logn)
 // sliding window
-// getting path solution
 // BIT solution
 
 vector<int> dp(3000, -1);
@@ -24,11 +25,30 @@ int solveRec(int stIdx, vector<int> &nums){
     return dp[stIdx];
 }
 
+void solveItr(vector<int> &nums){                // here the dp index is the index where the seq END
+    fill(dp.begin(), dp.end(), 1);        // initially ending at any pos gives 1 length seq
+    for(int i = 0; i < dp.size(); i++){
+        for(int j = 0; j < i; j++){
+            if(nums[j] < nums[i])
+                dp[i] = max(dp[i], 1 + dp[j]); // nums[j] is the element before the last element (nums[i]) in sequence
+        }
+    }
+}
+
+
+
 int lengthOfLIS(vector<int>& nums) {
     int maxLen = 0;
+    // solve rec
     for(int i = 0; i < nums.size(); i++){           // first try all possible staring index
         maxLen = max(maxLen, solveRec(i, nums));
     }
+
+    // solve itr
+    solveItr(nums);
+    for(int i = 0; i < nums.size(); i++)
+        maxLen = max(maxLen, dp[i]);
+
     return maxLen;
 }
 
@@ -38,6 +58,15 @@ int main(){
     vector<int> seq (n);
     for(auto &ele : seq)
         cin>>ele;
-    cout<< lengthOfLIS(seq);
+    int maxLen = lengthOfLIS(seq);
+    cout<< "length " << maxLen <<endl;
+
+    // find path
+    stack<int> path;
+    findPath(path, maxLen, n);
+    while(!path.empty()){
+        cout<< path.top()<<' ';
+        path.pop();
+    }
     return 0;
 }
