@@ -33,7 +33,11 @@ int lengthOfLIS(vector<int>& nums) {
 }
 
 int main(){
-    vector<int> v = { 9, 2, 5, 10,3,11};
-    cout<< lengthOfLIS(v);
+    int n;
+    cin>>n;
+    vector<int> seq (n);
+    for(auto &ele : seq)
+        cin>>ele;
+    cout<< lengthOfLIS(seq);
     return 0;
 }
