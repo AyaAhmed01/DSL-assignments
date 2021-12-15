@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/dynamic programming/longest increasing subsequence.cpp
+C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/dynamic programming/longest increasing subsequence (dp).cpp
 iostream
 -
 vector
+-
+stack
 -
 

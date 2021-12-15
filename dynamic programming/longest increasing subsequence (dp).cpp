@@ -6,9 +6,8 @@ using namespace std;
 
 // Dynamic programming sol: recursive, iterative. Time: O(n^2), space: O(n)
 // getting path
-// greedy && binary search: O(n*logn)
-// sliding window
-// BIT solution
+
+
 
 vector<int> dp(3000, -1);
 
@@ -35,7 +34,14 @@ void solveItr(vector<int> &nums){                // here the dp index is the ind
     }
 }
 
-
+void findPath(stack<int> &path, int maxLen, vector<int> &nums){      // O(n), construct it AFTER finding the longest length and filling the dp
+    int remLen = maxLen;
+    for(int i = nums.size() - 1; i >= 0 && path.size() < maxLen; i--)
+        if(dp[i] == remLen){
+            path.push(nums[i]);
+            remLen--;
+        }
+}
 
 int lengthOfLIS(vector<int>& nums) {
     int maxLen = 0;
@@ -62,8 +68,9 @@ int main(){
     cout<< "length " << maxLen <<endl;
 
     // find path
+    cout<<"path: \n";
     stack<int> path;
-    findPath(path, maxLen, n);
+    findPath(path, maxLen, seq);
     while(!path.empty()){
         cout<< path.top()<<' ';
         path.pop();
