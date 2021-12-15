@@ -142,32 +142,32 @@ DSL_assignments/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/build
 .PHONY : DSL_assignments/fast
 
-dynamic_programming/longest_increasing_subsequence_(dp).obj: dynamic_programming/longest_increasing_subsequence_(dp).cpp.obj
+dynamic_programming/longest_increasing_subseq_(greedy_optimized).obj: dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.obj
 
-.PHONY : dynamic_programming/longest_increasing_subsequence_(dp).obj
+.PHONY : dynamic_programming/longest_increasing_subseq_(greedy_optimized).obj
 
 # target to build an object file
-dynamic_programming/longest_increasing_subsequence_(dp).cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subsequence_(dp).cpp.obj
-.PHONY : dynamic_programming/longest_increasing_subsequence_(dp).cpp.obj
+dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.obj
+.PHONY : dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.obj
 
-dynamic_programming/longest_increasing_subsequence_(dp).i: dynamic_programming/longest_increasing_subsequence_(dp).cpp.i
+dynamic_programming/longest_increasing_subseq_(greedy_optimized).i: dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.i
 
-.PHONY : dynamic_programming/longest_increasing_subsequence_(dp).i
+.PHONY : dynamic_programming/longest_increasing_subseq_(greedy_optimized).i
 
 # target to preprocess a source file
-dynamic_programming/longest_increasing_subsequence_(dp).cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subsequence_(dp).cpp.i
-.PHONY : dynamic_programming/longest_increasing_subsequence_(dp).cpp.i
+dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.i
+.PHONY : dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.i
 
-dynamic_programming/longest_increasing_subsequence_(dp).s: dynamic_programming/longest_increasing_subsequence_(dp).cpp.s
+dynamic_programming/longest_increasing_subseq_(greedy_optimized).s: dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.s
 
-.PHONY : dynamic_programming/longest_increasing_subsequence_(dp).s
+.PHONY : dynamic_programming/longest_increasing_subseq_(greedy_optimized).s
 
 # target to generate assembly for a file
-dynamic_programming/longest_increasing_subsequence_(dp).cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subsequence_(dp).cpp.s
-.PHONY : dynamic_programming/longest_increasing_subsequence_(dp).cpp.s
+dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.s
+.PHONY : dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DSL_assignments
-	@echo ... dynamic_programming/longest_increasing_subsequence_(dp).obj
-	@echo ... dynamic_programming/longest_increasing_subsequence_(dp).i
-	@echo ... dynamic_programming/longest_increasing_subsequence_(dp).s
+	@echo ... dynamic_programming/longest_increasing_subseq_(greedy_optimized).obj
+	@echo ... dynamic_programming/longest_increasing_subseq_(greedy_optimized).i
+	@echo ... dynamic_programming/longest_increasing_subseq_(greedy_optimized).s
 .PHONY : help
 
 

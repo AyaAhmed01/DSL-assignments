@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/dynamic programming/longest increasing subsequence (dp).cpp">
+		<Unit filename="C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/dynamic programming/longest_increasing_subseq (greedy optimized).cpp">
 			<Option target="DSL_assignments"/>
 		</Unit>
 		<Unit filename="C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/CMakeLists.txt">
