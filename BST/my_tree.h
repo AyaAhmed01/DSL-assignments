@@ -1,8 +1,38 @@
-//
-// Created by Go on 12/15/2021.
-//
+#ifndef MY_TREE_H
+#define MY_TREE_H
 
-#ifndef DSL_ASSIGNMENTS_MY_TREE_H
-#define DSL_ASSIGNMENTS_MY_TREE_H
+#include <vector>
+using namespace std;
 
-#endif //DSL_ASSIGNMENTS_MY_TREE_H
+template <class T>
+class MyTree{
+
+private:
+
+public:
+    MyTree(){}
+
+    MyTree(vector<T> elements){}
+
+    bool search(T key){}
+
+    void insert(T key){}
+
+    void inorder_rec(){}
+
+    void preorder_rec(){}
+
+    void postorder_rec(){}
+
+    void inorder_it(){}
+
+    void preorder_it(){}
+
+    void postorder_it(){}
+
+    void breadth_traversal(){}
+
+    int size(){}
+};
+
+#endif

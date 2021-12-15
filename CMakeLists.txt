@@ -4,7 +4,7 @@ project(DSL_assignments)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(DSL_assignments
-#        "dynamic programming/knapsack_with_repetition.cpp"
-#        "dynamic programming/knapsack_without_repetition.cpp"
-         "dynamic programming/longest increasing subsequence.cpp"
+#         "BST/my_tree.cpp"
+#         "BST/my_tree.h"
+         "dynamic programming/longest increasing subsequence (dp).cpp"
         )

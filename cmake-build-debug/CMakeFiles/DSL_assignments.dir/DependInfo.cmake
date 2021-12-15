@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/dynamic programming/longest increasing subsequence.cpp" "C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/cmake-build-debug/CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subsequence.cpp.obj"
+  "C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/dynamic programming/longest increasing subsequence (dp).cpp" "C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/cmake-build-debug/CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subsequence_(dp).cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
