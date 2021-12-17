@@ -76,27 +76,27 @@ include CMakeFiles/DSL_assignments.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DSL_assignments.dir/flags.make
 
-CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.obj: CMakeFiles/DSL_assignments.dir/flags.make
-CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.obj: ../dynamic\ programming/longest_increasing_subseq\ (greedy\ optimized).cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Go\Desktop\Third year (isa)\Algorithms\DSL assignments\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DSL_assignments.dir\dynamic_programming\longest_increasing_subseq_(greedy_optimized).cpp.obj -c "C:\Users\Go\Desktop\Third year (isa)\Algorithms\DSL assignments\dynamic programming\longest_increasing_subseq (greedy optimized).cpp"
+CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.obj: CMakeFiles/DSL_assignments.dir/flags.make
+CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.obj: ../BST/my_tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Go\Desktop\Third year (isa)\Algorithms\DSL assignments\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DSL_assignments.dir\BST\my_tree.cpp.obj -c "C:\Users\Go\Desktop\Third year (isa)\Algorithms\DSL assignments\BST\my_tree.cpp"
 
-CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Go\Desktop\Third year (isa)\Algorithms\DSL assignments\dynamic programming\longest_increasing_subseq (greedy optimized).cpp" > CMakeFiles\DSL_assignments.dir\dynamic_programming\longest_increasing_subseq_(greedy_optimized).cpp.i
+CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Go\Desktop\Third year (isa)\Algorithms\DSL assignments\BST\my_tree.cpp" > CMakeFiles\DSL_assignments.dir\BST\my_tree.cpp.i
 
-CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Go\Desktop\Third year (isa)\Algorithms\DSL assignments\dynamic programming\longest_increasing_subseq (greedy optimized).cpp" -o CMakeFiles\DSL_assignments.dir\dynamic_programming\longest_increasing_subseq_(greedy_optimized).cpp.s
+CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Go\Desktop\Third year (isa)\Algorithms\DSL assignments\BST\my_tree.cpp" -o CMakeFiles\DSL_assignments.dir\BST\my_tree.cpp.s
 
 # Object files for target DSL_assignments
 DSL_assignments_OBJECTS = \
-"CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.obj"
+"CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.obj"
 
 # External object files for target DSL_assignments
 DSL_assignments_EXTERNAL_OBJECTS =
 
-DSL_assignments.exe: CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.obj
+DSL_assignments.exe: CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.obj
 DSL_assignments.exe: CMakeFiles/DSL_assignments.dir/build.make
 DSL_assignments.exe: CMakeFiles/DSL_assignments.dir/linklibs.rsp
 DSL_assignments.exe: CMakeFiles/DSL_assignments.dir/objects1.rsp

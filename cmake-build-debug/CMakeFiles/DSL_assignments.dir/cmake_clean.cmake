@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DSL_assignments.dir/dynamic_programming/longest_increasing_subseq_(greedy_optimized).cpp.obj"
+  "CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.obj"
   "DSL_assignments.exe"
   "DSL_assignments.exe.manifest"
   "DSL_assignments.pdb"

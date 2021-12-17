@@ -8,11 +8,45 @@ template <class T>
 class MyTree{
 
 private:
+    struct Node{      // each node has value, parent, children
+        T value;
+        Node parent, leftChild, rightChild;
+    };
+
+    Node root;
+
+    Node buildTree(vector<T> &elements, int l, int h){
+        if(l == h){          // base case
+            Node node;
+            node.value = elements[l];
+            node.leftChild = NULL;
+            node.rightChild = NULL;
+            return node;
+        }
+        int mid = l + (h - l)/2;
+        Node currNode;
+        currNode.value = elements[mid];
+
+        Node &leftChild = buildTree(elements, l, mid);
+        Node &rightChild = buildTree(elements, mid+1, h);
+
+        currNode.leftChild = leftChild;
+        currNode.rightChild = rightChild;
+        leftChild.parent = currNode;
+        rightChild.parent = currNode;
+
+        return currNode;
+    }
 
 public:
-    MyTree(){}
+    MyTree(){
+        root = NULL;
+    }
 
-    MyTree(vector<T> elements){}
+    MyTree(vector<T> elements){
+        sort(elements.begin(), elements.end());
+        root = buildTree(elements, 0, elements.size() - 1);
+    }
 
     bool search(T key){}
 
