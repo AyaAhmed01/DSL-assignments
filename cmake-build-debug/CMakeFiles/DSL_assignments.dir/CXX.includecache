@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/dynamic programming/longest_increasing_subseq (greedy optimized).cpp
+C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/BST/my_tree.cpp
 iostream
 -
+vector
+-
+my_tree.h
+C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/BST/my_tree.h
+
+C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/BST/my_tree.h
 vector
 -
 algorithm

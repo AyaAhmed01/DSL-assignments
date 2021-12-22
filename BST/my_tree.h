@@ -2,71 +2,95 @@
 #define MY_TREE_H
 
 #include <vector>
+#include <algorithm>
 using namespace std;
 
-template <class T>
+struct Node{
+    int value;
+    Node *parent;       // should be pointers as the struct isn't done yet
+    Node *leftChild;
+    Node *rightChild;
+};
+
 class MyTree{
 
 private:
-    struct Node{      // each node has value, parent, children
-        T value;
-        Node parent, leftChild, rightChild;
-    };
 
-    Node root;
+    Node* newNode(int val){
+        Node *temp = (Node *)malloc(sizeof(Node));
+        temp -> value = val;
+        temp -> leftChild = temp -> rightChild = temp -> parent = NULL;
+        return temp;
+    }
 
-    Node buildTree(vector<T> &elements, int l, int h){
-        if(l == h){          // base case
-            Node node;
-            node.value = elements[l];
-            node.leftChild = NULL;
-            node.rightChild = NULL;
-            return node;
+    Node* buildTree(vector<int> &nums, Node *par, int l, int h){   // MUST be reference
+        if(h < l)
+            return NULL;
+
+        if(l == h){
+            return insert(par, nums[l]);
         }
+
         int mid = l + (h - l)/2;
-        Node currNode;
-        currNode.value = elements[mid];
-
-        Node &leftChild = buildTree(elements, l, mid);
-        Node &rightChild = buildTree(elements, mid+1, h);
-
-        currNode.leftChild = leftChild;
-        currNode.rightChild = rightChild;
-        leftChild.parent = currNode;
-        rightChild.parent = currNode;
-
-        return currNode;
+        auto curNode = insert(par, nums[mid]);
+        buildTree(nums, curNode, l, mid - 1);
+        buildTree(nums, curNode, mid + 1, h);
+        return curNode;
     }
 
 public:
-    MyTree(){
-        root = NULL;
-    }
 
-    MyTree(vector<T> elements){
+    Node *root = NULL;
+
+    MyTree(){}
+
+    MyTree(vector<int> &elements){              // MUST be reference
         sort(elements.begin(), elements.end());
-        root = buildTree(elements, 0, elements.size() - 1);
+        root = buildTree(elements, root, 0, elements.size() - 1);
     }
 
-    bool search(T key){}
+    bool search(int key){
+        auto node = root;
+        while(node != NULL){
+            if(key > node -> value)
+                node = node -> rightChild;
+            else if(key < node -> value)
+                node = node -> leftChild;
+            else
+                return true;
+        }
+        return false;
+    }
 
-    void insert(T key){}
+    Node* insert(Node *node, int key) {       /****** Handle parent *******/
+        // make a new root if the tree is empty
+        if (node == NULL){
+            return newNode(key);
+        }
+        // Traverse to the right place and insert the node
+        if (key < node->value)
+            node->leftChild = insert(node->leftChild, key);
+        else
+            node->rightChild = insert(node->rightChild, key);
 
-    void inorder_rec(){}
-
-    void preorder_rec(){}
-
-    void postorder_rec(){}
-
-    void inorder_it(){}
-
-    void preorder_it(){}
-
-    void postorder_it(){}
-
-    void breadth_traversal(){}
-
-    int size(){}
+        return node;
+    }
+//
+//    void inorder_rec(){}
+//
+//    void preorder_rec(){}
+//
+//    void postorder_rec(){}
+//
+//    void inorder_it(){}
+//
+//    void preorder_it(){}
+//
+//    void postorder_it(){}
+//
+//    void breadth_traversal(){}
+//
+//    int size(){}
 };
 
 #endif

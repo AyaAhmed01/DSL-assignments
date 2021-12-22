@@ -68,12 +68,12 @@ int main(){
     cout<< "length " << maxLen <<endl;
 
     // find path
-    cout<<"path: \n";
-    stack<int> path;
-    findPath(path, maxLen, seq);
-    while(!path.empty()){
-        cout<< path.top()<<' ';
-        path.pop();
-    }
+    // cout<<"path: \n";
+    // stack<int> path;
+    // findPath(path, maxLen, seq);
+    // while(!path.empty()){
+    //     cout<< path.top()<<' ';
+    //     path.pop();
+    // }
     return 0;
 }
