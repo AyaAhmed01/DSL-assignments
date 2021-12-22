@@ -136,18 +136,23 @@ public:
     }
 
     void postorder_it(){
-        stack<Node*> st;
-        st.push(root);
+        stack<Node*> st1, st2;
+        st1.push(root);
         Node *curNode;
 
-        while(!st.empty()){
-            curNode = st.top();
-            st.pop();
-            cout<<curNode -> value;
-            if(curNode -> rightChild != NULL)
-                st.push(curNode -> rightChild);
+        while(!st1.empty()){
+            curNode = st1.top();
+            st1.pop();
+            st2.push(curNode);
             if(curNode -> leftChild != NULL)
-                st.push(curNode -> leftChild);
+                st1.push(curNode -> leftChild);
+            if(curNode -> rightChild != NULL)
+                st1.push(curNode -> rightChild);
+        }
+        // printing all elements
+        while(!st2.empty()){
+            cout<<st2.top() -> value<< " ";
+            st2.pop();
         }
     }
 
