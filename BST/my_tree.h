@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <algorithm>
+#include <stack>
 using namespace std;
 
 struct Node{
@@ -75,19 +76,81 @@ public:
 
         return node;
     }
-//
-//    void inorder_rec(){}
-//
-//    void preorder_rec(){}
-//
-//    void postorder_rec(){}
-//
-//    void inorder_it(){}
-//
-//    void preorder_it(){}
-//
-//    void postorder_it(){}
-//
+
+    void inorder_rec(Node *node){
+        if(node == NULL)
+            return;
+        inorder_rec(node -> leftChild);
+        cout<<node -> value<<' ';
+        inorder_rec(node -> rightChild);
+    }
+
+    void preorder_rec(Node *node){
+        if(node == NULL)
+            return;
+        cout<<node -> value<<' ';
+        inorder_rec(node -> leftChild);
+        inorder_rec(node -> rightChild);
+    }
+
+    void postorder_rec(Node *node){
+        if(node == NULL)
+            return;
+        inorder_rec(node -> leftChild);
+        inorder_rec(node -> rightChild);
+        cout<<node -> value<<' ';
+    }
+
+    // since recursion is stack in memory, to replace we should build stack
+    void inorder_it(){
+        stack<Node*> st;
+        Node *curNode = root;
+
+        while(!st.empty() || curNode != NULL){  // It MUST be empty and curNode = null to exist
+            while(curNode != NULL){
+                st.push(curNode);
+                curNode = curNode -> leftChild;
+            }
+           // now curNode is NULL
+            curNode = st.top();
+            st.pop();
+            cout<<curNode -> value <<" ";
+            curNode = curNode -> rightChild;
+        }
+    }
+
+    void preorder_it(){
+        stack<Node*> st;
+        st.push(root);
+        Node *curNode;
+
+        while(!st.empty()){
+            curNode = st.top();
+            st.pop();
+            cout<<curNode -> value;
+            if(curNode -> rightChild != NULL)
+                st.push(curNode -> rightChild);
+            if(curNode -> leftChild != NULL)
+                st.push(curNode -> leftChild);
+        }
+    }
+
+    void postorder_it(){
+        stack<Node*> st;
+        st.push(root);
+        Node *curNode;
+
+        while(!st.empty()){
+            curNode = st.top();
+            st.pop();
+            cout<<curNode -> value;
+            if(curNode -> rightChild != NULL)
+                st.push(curNode -> rightChild);
+            if(curNode -> leftChild != NULL)
+                st.push(curNode -> leftChild);
+        }
+    }
+
 //    void breadth_traversal(){}
 //
 //    int size(){}

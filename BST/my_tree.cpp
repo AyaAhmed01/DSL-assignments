@@ -18,8 +18,7 @@ int main(int argc, char** argv){
 //    cout<< root -> value << endl;
 //    cout<<root -> leftChild -> value << endl;
 //    cout<<root -> rightChild -> value;
-
-
+    tree -> inorder_it();
 
 //    string input;
 //    cin>>input;
