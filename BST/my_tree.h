@@ -4,6 +4,7 @@
 #include <vector>
 #include <algorithm>
 #include <stack>
+#include <queue>
 using namespace std;
 
 struct Node{
@@ -156,9 +157,34 @@ public:
         }
     }
 
-//    void breadth_traversal(){}
-//
-//    int size(){}
+    void breadth_traversal(){
+        queue<Node*> qu;
+        qu.push(root);
+        while(!qu.empty()){
+            auto curNode = qu.front();
+            qu.pop();
+            cout<<curNode -> value <<' ';
+            if(curNode -> leftChild != NULL)
+                qu.push(curNode -> leftChild);
+            if(curNode -> rightChild != NULL)
+                qu.push(curNode -> rightChild);
+        }
+    }
+
+    int size(){
+        int cnt = 0;
+        // count by BFS
+        queue<Node*> qu;
+        qu.push(root);
+        while(!qu.empty()){
+            auto curNode = qu.front();
+            cnt++;
+            qu.pop();
+            qu.push(curNode -> leftChild);
+            qu.push(curNode -> rightChild);
+        }
+        return cnt;
+    }
 };
 
 #endif

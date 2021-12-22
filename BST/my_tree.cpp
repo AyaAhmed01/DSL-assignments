@@ -18,7 +18,7 @@ int main(int argc, char** argv){
 //    cout<< root -> value << endl;
 //    cout<<root -> leftChild -> value << endl;
 //    cout<<root -> rightChild -> value;
-    tree -> postorder_it();
+    tree -> breadth_traversal();
 
 //    string input;
 //    cin>>input;
