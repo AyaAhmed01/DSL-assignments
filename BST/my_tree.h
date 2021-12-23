@@ -9,8 +9,7 @@ using namespace std;
 
 struct Node{
     int value;
-    Node *parent;       // should be pointers as the struct isn't done yet
-    Node *leftChild;
+    Node *leftChild;    // should be pointers as the struct isn't done yet
     Node *rightChild;
 };
 
@@ -21,7 +20,7 @@ private:
     Node* newNode(int val){
         Node *temp = (Node *)malloc(sizeof(Node));
         temp -> value = val;
-        temp -> leftChild = temp -> rightChild = temp -> parent = NULL;
+        temp -> leftChild = temp -> rightChild = NULL;
         return temp;
     }
 
@@ -64,7 +63,7 @@ public:
         return false;
     }
 
-    Node* insert(Node *node, int key) {       /****** Handle parent *******/
+    Node* insert(Node *node, int key) {
         // make a new root if the tree is empty
         if (node == NULL){
             return newNode(key);
@@ -90,15 +89,15 @@ public:
         if(node == NULL)
             return;
         cout<<node -> value<<' ';
-        inorder_rec(node -> leftChild);
-        inorder_rec(node -> rightChild);
+        preorder_rec(node -> leftChild);
+        preorder_rec(node -> rightChild);
     }
 
     void postorder_rec(Node *node){
         if(node == NULL)
             return;
-        inorder_rec(node -> leftChild);
-        inorder_rec(node -> rightChild);
+        postorder_rec(node -> leftChild);
+        postorder_rec(node -> rightChild);
         cout<<node -> value<<' ';
     }
 
@@ -128,7 +127,7 @@ public:
         while(!st.empty()){
             curNode = st.top();
             st.pop();
-            cout<<curNode -> value;
+            cout<<curNode -> value<<" ";
             if(curNode -> rightChild != NULL)
                 st.push(curNode -> rightChild);
             if(curNode -> leftChild != NULL)
@@ -180,8 +179,10 @@ public:
             auto curNode = qu.front();
             cnt++;
             qu.pop();
-            qu.push(curNode -> leftChild);
-            qu.push(curNode -> rightChild);
+            if(curNode -> leftChild != NULL)
+                qu.push(curNode -> leftChild);
+            if(curNode -> rightChild != NULL)
+                qu.push(curNode -> rightChild);
         }
         return cnt;
     }
