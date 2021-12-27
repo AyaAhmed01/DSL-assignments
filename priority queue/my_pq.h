@@ -2,6 +2,9 @@
 #define MY_PQ_H
 
 #include <vector>
+#include <algorithm>
+#include <cmath>
+
 using namespace std;
 
 class My_PQ{
@@ -24,7 +27,7 @@ private:
     void siftUp(int idx){
         while(idx > 0 && elements[parentIdx(idx)] < elements[idx]){
             swap(elements[parentIdx(idx)], elements[idx]);
-            idx = parent(idx);
+            idx = parentIdx(idx);
         }
     }
 
@@ -35,11 +38,11 @@ private:
             if(leftIdx < curSize && elements[leftIdx] > elements[maxIdx])
                 maxIdx = leftIdx;
             int rightIdx = rightChildIdx(idx);
-            if(rightId < curSize && elements[rightIdx] > elements[maxIdx])
+            if(rightIdx < curSize && elements[rightIdx] > elements[maxIdx])
                 maxIdx = rightIdx;
-            if(i != maxIdx){
+            if(idx != maxIdx){
                 swap(elements[maxIdx], elements[idx]);
-                i = maxIdx;
+                idx = maxIdx;
             } else
                 break;
         }
