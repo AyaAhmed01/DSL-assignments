@@ -142,32 +142,32 @@ DSL_assignments/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/build
 .PHONY : DSL_assignments/fast
 
-BST/my_tree.obj: BST/my_tree.cpp.obj
+priority_queue/main.obj: priority_queue/main.cpp.obj
 
-.PHONY : BST/my_tree.obj
+.PHONY : priority_queue/main.obj
 
 # target to build an object file
-BST/my_tree.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.obj
-.PHONY : BST/my_tree.cpp.obj
+priority_queue/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/priority_queue/main.cpp.obj
+.PHONY : priority_queue/main.cpp.obj
 
-BST/my_tree.i: BST/my_tree.cpp.i
+priority_queue/main.i: priority_queue/main.cpp.i
 
-.PHONY : BST/my_tree.i
+.PHONY : priority_queue/main.i
 
 # target to preprocess a source file
-BST/my_tree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.i
-.PHONY : BST/my_tree.cpp.i
+priority_queue/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/priority_queue/main.cpp.i
+.PHONY : priority_queue/main.cpp.i
 
-BST/my_tree.s: BST/my_tree.cpp.s
+priority_queue/main.s: priority_queue/main.cpp.s
 
-.PHONY : BST/my_tree.s
+.PHONY : priority_queue/main.s
 
 # target to generate assembly for a file
-BST/my_tree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.s
-.PHONY : BST/my_tree.cpp.s
+priority_queue/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DSL_assignments.dir\build.make CMakeFiles/DSL_assignments.dir/priority_queue/main.cpp.s
+.PHONY : priority_queue/main.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DSL_assignments
-	@echo ... BST/my_tree.obj
-	@echo ... BST/my_tree.i
-	@echo ... BST/my_tree.s
+	@echo ... priority_queue/main.obj
+	@echo ... priority_queue/main.i
+	@echo ... priority_queue/main.s
 .PHONY : help
 
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/BST/my_tree.cpp" "C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/cmake-build-debug/CMakeFiles/DSL_assignments.dir/BST/my_tree.cpp.obj"
+  "C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/priority queue/main.cpp" "C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/cmake-build-debug/CMakeFiles/DSL_assignments.dir/priority_queue/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
