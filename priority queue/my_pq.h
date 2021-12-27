@@ -48,7 +48,12 @@ private:
 public:
     My_PQ(){}
 
-    My_PQ(vector<int> arr, int maxSize = 1e6){}
+    My_PQ(vector<int> &arr, int mxSize = 1e6){
+        maxSize = mxSize;
+        curSize = arr.size();
+        elements = arr;                 // elements is a COPY of arr, NOT pointing to same vector
+        sort(elements.rbegin(), elements.rend());  // sort in descending order
+    }
 
     int extractMax(){
         int result = elements[0];
@@ -64,6 +69,14 @@ public:
             siftDown(index);
         else
             siftUp(index);
+    }
+
+    int size(){
+        return curSize;
+    }
+
+    bool empty(){
+        return curSize == 0;
     }
 
     int peek(){
