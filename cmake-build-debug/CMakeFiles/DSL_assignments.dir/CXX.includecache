@@ -6,21 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/BST/my_tree.cpp
+C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/priority queue/main.cpp
 iostream
 -
 vector
 -
-my_tree.h
-C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/BST/my_tree.h
+my_pq.h
+C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/priority queue/my_pq.h
 
-C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/BST/my_tree.h
+C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/priority queue/my_pq.h
 vector
--
-algorithm
--
-stack
--
-queue
 -
 
