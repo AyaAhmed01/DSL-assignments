@@ -58,11 +58,14 @@ public:
         sort(elements.rbegin(), elements.rend());  // sort in descending order
     }
 
+    ~My_PQ(){}
+
     int extractMax(){
         int result = elements[0];
         elements[0] = elements[curSize - 1];
         curSize--;
         siftDown(0);
+        return result;
     }
 
     int changePriority(int index, int newPriority){
@@ -72,6 +75,7 @@ public:
             siftDown(index);
         else
             siftUp(index);
+        return oldP;
     }
 
     int size(){
