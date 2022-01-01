@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(DSL_assignments
         "priority queue/main.cpp"
-        "priority queue/my_pq.h"
+#        "priority queue/my_pq.h"
 #         "BST/my_tree.cpp"
 #         "BST/my_tree.h"
 #         "dynamic programming/longest increasing subsequence (dp).cpp"

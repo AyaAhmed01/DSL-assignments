@@ -32,7 +32,7 @@ int main(){
             case 2:
             {
                 cin>>x>>y;
-                cout<< heap -> changePriority(x, y);
+                heap -> changePriority(x, y);
                 break;
             }
             case 3:
@@ -65,13 +65,12 @@ int main(){
     return 0;
 }
 
-//5 7
-//4 1 2 8 6 3 5
-//1 7
-//2 0 5
-//3 1
-//4
-//5
-//7
-//6
-
+//- 7 7 // the initial heap size is 5, you are expecting 7 operations
+//- 4 1 2 8 6 3 5 // the elements to be inserted in the heap
+//- 1 7 // first operation, insert 7
+//- 2 0 5 // second operation, change priority of element at index 0 to 5
+//- 3 1   // remove element at index 1, which is supposed to be 6
+//- 4     // remove the root, which is supposed to be 7
+//- 5     // print max element, which is supposed to be 5
+//- 7     // print size, which is supposed to be 6
+//- 6     // print all eleemnts in PQ ==> 5 5 4 3 2 1

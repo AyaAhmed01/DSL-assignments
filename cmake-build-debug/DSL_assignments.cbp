@@ -83,9 +83,6 @@
 		<Unit filename="C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/priority queue/main.cpp">
 			<Option target="DSL_assignments"/>
 		</Unit>
-		<Unit filename="C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/priority queue/my_pq.h">
-			<Option target="DSL_assignments"/>
-		</Unit>
 		<Unit filename="C:/Users/Go/Desktop/Third year (isa)/Algorithms/DSL assignments/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
